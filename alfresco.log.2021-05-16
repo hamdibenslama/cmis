@@ -1,0 +1,151 @@
+2021-05-16 14:42:22,265 ERROR [org.quartz.core.JobRunShell] [SearchScheduler_Worker-3] Job DEFAULT.search.archiveCoreBackupJobDetail threw an unhandled Exception: 
+org.alfresco.error.AlfrescoRuntimeException: 04160035 Backup for core archive failed .... 
+	at org.alfresco.repo.search.impl.solr.SolrBackupClient.executeImpl(SolrBackupClient.java:203)
+	at org.alfresco.repo.search.impl.solr.SolrBackupClient.execute(SolrBackupClient.java:140)
+	at org.alfresco.repo.search.impl.solr.SolrBackupJob.execute(SolrBackupJob.java:65)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+Caused by: org.apache.solr.client.solrj.SolrServerException: java.net.SocketTimeoutException: Read timed out
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:483)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:244)
+	at org.apache.solr.client.solrj.request.QueryRequest.process(QueryRequest.java:89)
+	at org.apache.solr.client.solrj.SolrServer.query(SolrServer.java:118)
+	at org.alfresco.repo.solr.SOLRAdminClient.query(SOLRAdminClient.java:203)
+	at org.alfresco.repo.search.impl.solr.SolrBackupClient.executeImpl(SolrBackupClient.java:192)
+	... 4 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78)
+	at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106)
+	at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.readLine(MultiThreadedHttpConnectionManager.java:1413)
+	at org.apache.commons.httpclient.HttpMethodBase.readStatusLine(HttpMethodBase.java:1973)
+	at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1735)
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:427)
+	... 9 more
+2021-05-16 14:42:22,265 ERROR [org.quartz.core.JobRunShell] [SearchScheduler_Worker-2] Job DEFAULT.search.alfrescoCoreBackupJobDetail threw an unhandled Exception: 
+org.alfresco.error.AlfrescoRuntimeException: 04160036 Backup for core alfresco failed .... 
+	at org.alfresco.repo.search.impl.solr.SolrBackupClient.executeImpl(SolrBackupClient.java:203)
+	at org.alfresco.repo.search.impl.solr.SolrBackupClient.execute(SolrBackupClient.java:140)
+	at org.alfresco.repo.search.impl.solr.SolrBackupJob.execute(SolrBackupJob.java:65)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+Caused by: org.apache.solr.client.solrj.SolrServerException: java.net.SocketTimeoutException: Read timed out
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:483)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:244)
+	at org.apache.solr.client.solrj.request.QueryRequest.process(QueryRequest.java:89)
+	at org.apache.solr.client.solrj.SolrServer.query(SolrServer.java:118)
+	at org.alfresco.repo.solr.SOLRAdminClient.query(SOLRAdminClient.java:203)
+	at org.alfresco.repo.search.impl.solr.SolrBackupClient.executeImpl(SolrBackupClient.java:192)
+	... 4 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78)
+	at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106)
+	at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.readLine(MultiThreadedHttpConnectionManager.java:1413)
+	at org.apache.commons.httpclient.HttpMethodBase.readStatusLine(HttpMethodBase.java:1973)
+	at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1735)
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:427)
+	... 9 more
+2021-05-16 14:42:23,289 ERROR [org.quartz.core.ErrorLogger] [SearchScheduler_Worker-3] Job (DEFAULT.search.archiveCoreBackupJobDetail threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: org.alfresco.error.AlfrescoRuntimeException: 04160035 Backup for core archive failed .... ]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:227)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+Caused by: org.alfresco.error.AlfrescoRuntimeException: 04160035 Backup for core archive failed .... 
+	at org.alfresco.repo.search.impl.solr.SolrBackupClient.executeImpl(SolrBackupClient.java:203)
+	at org.alfresco.repo.search.impl.solr.SolrBackupClient.execute(SolrBackupClient.java:140)
+	at org.alfresco.repo.search.impl.solr.SolrBackupJob.execute(SolrBackupJob.java:65)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	... 1 more
+Caused by: org.apache.solr.client.solrj.SolrServerException: java.net.SocketTimeoutException: Read timed out
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:483)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:244)
+	at org.apache.solr.client.solrj.request.QueryRequest.process(QueryRequest.java:89)
+	at org.apache.solr.client.solrj.SolrServer.query(SolrServer.java:118)
+	at org.alfresco.repo.solr.SOLRAdminClient.query(SOLRAdminClient.java:203)
+	at org.alfresco.repo.search.impl.solr.SolrBackupClient.executeImpl(SolrBackupClient.java:192)
+	... 4 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78)
+	at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106)
+	at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.readLine(MultiThreadedHttpConnectionManager.java:1413)
+	at org.apache.commons.httpclient.HttpMethodBase.readStatusLine(HttpMethodBase.java:1973)
+	at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1735)
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:427)
+	... 9 more
+2021-05-16 14:42:23,297 ERROR [org.quartz.core.ErrorLogger] [SearchScheduler_Worker-2] Job (DEFAULT.search.alfrescoCoreBackupJobDetail threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: org.alfresco.error.AlfrescoRuntimeException: 04160036 Backup for core alfresco failed .... ]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:227)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+Caused by: org.alfresco.error.AlfrescoRuntimeException: 04160036 Backup for core alfresco failed .... 
+	at org.alfresco.repo.search.impl.solr.SolrBackupClient.executeImpl(SolrBackupClient.java:203)
+	at org.alfresco.repo.search.impl.solr.SolrBackupClient.execute(SolrBackupClient.java:140)
+	at org.alfresco.repo.search.impl.solr.SolrBackupJob.execute(SolrBackupJob.java:65)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	... 1 more
+Caused by: org.apache.solr.client.solrj.SolrServerException: java.net.SocketTimeoutException: Read timed out
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:483)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:244)
+	at org.apache.solr.client.solrj.request.QueryRequest.process(QueryRequest.java:89)
+	at org.apache.solr.client.solrj.SolrServer.query(SolrServer.java:118)
+	at org.alfresco.repo.solr.SOLRAdminClient.query(SOLRAdminClient.java:203)
+	at org.alfresco.repo.search.impl.solr.SolrBackupClient.executeImpl(SolrBackupClient.java:192)
+	... 4 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78)
+	at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106)
+	at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.readLine(MultiThreadedHttpConnectionManager.java:1413)
+	at org.apache.commons.httpclient.HttpMethodBase.readStatusLine(HttpMethodBase.java:1973)
+	at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1735)
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:427)
+	... 9 more
+2021-05-16 15:14:52,751 INFO  [org.alfresco.repo.admin] [localhost-startStop-1] Using database URL 'jdbc:h2:C:\Users\hamdi\alfrescoCMIS/alf_data_dev/h2_data/alf_dev;AUTO_SERVER=TRUE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=10000;MVCC=FALSE;LOCK_MODE=0' with user 'alfresco'.
+2021-05-16 15:14:52,787 INFO  [org.alfresco.repo.admin] [localhost-startStop-1] Connected to database H2 version 1.4.190 (2015-10-11)
+2021-05-16 15:14:58,986 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] [localhost-startStop-1] Ignoring script patch (post-Hibernate): patch.db-V4.2-metadata-query-indexes
+2021-05-16 15:14:58,986 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] [localhost-startStop-1] Ignoring script patch (post-Hibernate): patch.db-V5.1-metadata-query-indexes
+2021-05-16 15:14:58,986 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] [localhost-startStop-1] Ignoring script patch (post-Hibernate): patch.db-V5.2-remove-jbpm-tables-from-db

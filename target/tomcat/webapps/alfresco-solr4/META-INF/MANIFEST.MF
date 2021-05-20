@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Implementation-Title: Alfresco Solr 4
+Build-Date: 2017-01-18T11:03:49Z
+Build-Number: 13
+Implementation-Version: 5.2.e
+Archiver-Version: Plexus Archiver
+Built-By: build
+Specification-Vendor: Alfresco Software
+Specification-Title: Alfresco Solr 4
+Implementation-Vendor-Id: org.alfresco
+Build-Key: ALF-CREPO4-JOB1-13
+Implementation-Vendor: Alfresco Software
+Build-Revision: 134428
+Build-Name: Alfresco - Community 5.2 Platform - 5.2.e
+Created-By: Apache Maven 3.2.5
+Build-Jdk: 1.8.0_111
+Implementation-URL: http://www.alfresco.org/alfresco-parent/projects/a
+ lfresco-solr4/
+Specification-Version: 5.2.0
+
+Name: Source-control
+Source-Url: https://svn.alfresco.com/repos/alfresco-enterprise/alfresc
+ o/COMMUNITYTAGS/5.2.e
+Source-Revision: 134428
+Last-change-Revision: null
+

@@ -1,0 +1,27 @@
+body {
+     padding: 10px;
+}
+
+#select-wrapper {
+     padding-top: 3px;
+}
+
+.swagger-section #header #alflogo {
+     background: transparent;
+}
+
+.swagger-section #header {
+     padding: 14px;
+     border-bottom: 1px solid #e6e6ec;
+     background: linear-gradient(to bottom,white 0%,#f9fafa 47%,#f4f4f4 100%);
+}
+
+.swagger-section #api_selector .input {
+     margin: 10px 10px 0 0;
+     padding-top: 3px;
+}
+
+.swagger-section #api_selector .input input {
+     padding-top: 0;
+}
+

@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Implementation-Title: Alfresco REST API Explorer
+Build-Date: 2017-01-12T22:15:57Z
+Build-Number: 37
+Implementation-Version: 5.2.e
+Archiver-Version: Plexus Archiver
+Built-By: build
+Specification-Title: Alfresco REST API Explorer
+Implementation-Vendor-Id: org.alfresco
+Build-Key: DEV-RAE-REL-37
+Build-Revision: 924ec1606b93ce2c0a2da51632b488be771de9d0
+Build-Name: Dev - REST API Explorer
+Created-By: Apache Maven 3.2.5
+Build-Jdk: 1.8.0_101
+Specification-Version: 5.2.e
+
+Name: Libraries
+swaggerui-version: 2.1.4
+
